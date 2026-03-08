@@ -27,5 +27,6 @@ export const SITE_VARIANT: string = (() => {
     return import.meta.env.VITE_VARIANT || 'full';
   }
 
-  return 'full';
+  // Fallback to build-time env var (handles Vercel preview URLs, custom domains)
+  return import.meta.env.VITE_VARIANT || 'full';
 })();
