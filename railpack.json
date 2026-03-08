@@ -1,5 +1,10 @@
 {
   "$schema": "https://schema.railpack.com",
+  "providers": {
+    "node": {
+      "version": "20"
+    }
+  },
   "deploy": {
     "aptPackages": ["curl"]
   }
